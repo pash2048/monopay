@@ -177,7 +177,7 @@ export const tConfig = t.interface({
 
 export type Config = t.TypeOf<typeof tConfig>;
 
-export const tRequestOptions = t.intersection([t.partial({}), tBaseRequestOptions]);
+export const tRequestOptions = t.intersection([t.partial({ originator: t.string}), tBaseRequestOptions]);
 
 export type RequestOptions = t.TypeOf<typeof tRequestOptions>;
 
